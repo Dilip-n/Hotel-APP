@@ -15,7 +15,7 @@ router.post('/tasks', auth, async (req, res) => {
         res.status(400).send(e)
     }
 })
-//GET /Menu? completed = true
+//GET /Menu? completed is equal to true
 router.get('/tasks', auth, async (req, res) => {
    const match = {}
    const sort = {}
